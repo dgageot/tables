@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr" ng-app="myApp">
+<head>
+  <meta charset="utf-8">
+  <title>Tables de multiplication</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="tables.js"></script>
+</head>
+<body ng-controller="TablesCtrl">
+  <div class="game">
+    <div class="formula">
+    Combien font {{digit1}} x {{digit2}} ?
+      <div class="message">
+      {{message}}
+      </div>
+      <div class="score" ng-if="games > 0">
+      Score : {{score}} / {{games}}
+      </div>
+    </div>
+  </div>
+
+  <div class="answer">
+    <input type="number" ng-keypress="press($event)" ng-model="answer" autofocus="autofocus">
+    <button ng-click="answered()">OK</button>
+  </div>
+</body>
+</html>
