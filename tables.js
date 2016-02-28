@@ -4,8 +4,8 @@ var app = angular.module('myApp', []);
 
 app.controller('TablesCtrl', function ($scope) {
     $scope.reset = function () {
-        $scope.digit1 = Math.floor((Math.random() * 10) + 1);
-        $scope.digit2 = Math.floor((Math.random() * 10) + 1);
+        $scope.digit1 = Math.floor((Math.random() * 9) + 1);
+        $scope.digit2 = Math.floor((Math.random() * 9) + 1);
         $scope.answer = undefined;
     };
 
