@@ -1,30 +1,59 @@
+html {
+    background: rebeccapurple;
+}
+
+body {
+    margin: 0;
+}
+
 .game {
-    text-align: center;
+    height: 400px;
+    position: relative;
 }
 
 .formula {
+    position: absolute;
+    left: 0;
     background-color: gold;
-    width: 400px;
-    margin: 0 auto;
+    height: 100%;
+    width: 50%;
+}
+
+.center {
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 80px;
+    font-size: 80px;
     text-align: center;
-    font-size: 40px;
+    line-height: 80px;
 }
 
 .answer {
-    width: 410px;
-    margin: 50px auto 0 auto;
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50%;
 }
 
-.answer input {
+.score, .message  {
+    width: 100%;
+    margin-top: 10px;
     text-align: center;
-    font-size: 40px;
-    width: 320px;
-    display: inline-block;
+    font-size: 20px;
 }
 
-.answer button {
+input {
+    border: 0;
+    outline: none;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: dodgerblue;
     text-align: center;
-    font-size: 40px;
-    width: 80px;
-    display: inline-block;
+    font-size: 80px;
 }
